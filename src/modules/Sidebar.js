@@ -1,13 +1,12 @@
-import AcUnitIcon from "@mui/icons-material/AcUnit";
 import { Row, Col } from "react-bootstrap";
 import Logo from "../assets/img/logo.svg";
 const Sidebar = () => {
   return (
     <div className="main-sidebar">
       <Col>
-        <Row className="title py-5 m-0">
+        <Row className="title pb-5 pt-4 m-0">
           <div className="d-flex justify-content-center align-items-center">
-            <div className="pe-2">
+            <div className="pe-2 py-2">
               <img src={Logo} alt=""></img>
             </div>
             Dashboard Kit
