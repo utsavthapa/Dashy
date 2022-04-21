@@ -4,9 +4,9 @@ const Dashbody = () => {
   return (
     <>
       <div className="body">
-        <Container className="p-0">
+        <Container fluid>
           <Row>
-            <Col lg="12" className="row py-5">
+            <Col xxl="12" className="row py-5">
               <Col md="8">Overview</Col>
               <Col md="4">as</Col>
             </Col>

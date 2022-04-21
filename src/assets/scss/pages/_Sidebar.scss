@@ -1,6 +1,8 @@
 @import "../variable/variable";
 .main-sidebar {
+    position: relative;
     height: 100vh;
+    overflow-y: auto;
     background-color: $dark;
     color: $grey;
     font-size: $large-text;

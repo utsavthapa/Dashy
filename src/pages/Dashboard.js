@@ -1,22 +1,24 @@
 import Sidebar from "../modules/Sidebar";
 import Dashbody from "../modules/Dashbody";
-import { Col, Container, Row } from "react-bootstrap";
+// import { Col, Container, Row } from "react-bootstrap";
 const Dashboard = () => {
   return (
     <>
       <div className="dashboard">
-        <Container fluid className="p-0 " bg="primary">
+        <div className="dash-left">
+          <Sidebar />
+        </div>
+        <div className="dash-right">
+          <Dashbody />
+        </div>
+        {/* <Container fluid bg="primary" className="">
           <Row>
-            <Col xl="2" className="p-0">
-              <div className="Sidebar">
-                <Sidebar />
-              </div>
-            </Col>
-            <Col className="p-0">
-              <Dashbody />
-            </Col>
+            <div className="Sidebar">
+              <Sidebar />
+            </div>
+            <Dashbody />
           </Row>
-        </Container>
+        </Container> */}
       </div>
     </>
   );
