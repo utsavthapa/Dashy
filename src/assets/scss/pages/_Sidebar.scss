@@ -1,0 +1,17 @@
+@import "../variable/variable";
+.main-sidebar {
+    height: 100vh;
+    background-color: $dark;
+    color: $grey;
+    font-size: $large-text;
+    .title {
+        font-size: $small-heading;
+        font-weight: $bold;
+    }
+    .col {
+        .active {
+            background-color: rgba($light-grey, 0.08);
+            color: $light-grey;
+        }
+    }
+}

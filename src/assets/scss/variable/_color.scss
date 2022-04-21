@@ -1,0 +1,14 @@
+// $colors: (
+//     "dark": "#363740",
+//     "light-grey": "#a4a6b3",
+// );
+
+// @each $colorname, $colorcode in $colors {
+//     .bg-#{$colorname} {
+//         background-color: $colorcode;
+//     }
+// }
+
+$dark: #363740;
+$light-grey: #dde2ff;
+$grey: #a4a6b3;
