@@ -1,0 +1,34 @@
+// Media Query
+@import "../variable/break-point";
+@mixin sm {
+    @media only screen and (max-width: $screen-sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media only screen and (max-width: $screen-md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media only screen and (max-width: $screen-lg) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media only screen and (max-width: $screen-xl) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media only screen and (max-width: $screen-xxl) {
+        @content;
+    }
+    @media only screen and (min-width: $screen-xxl) {
+        @content;
+    }
+}

@@ -1,7 +1,8 @@
 @import "../variable/variable";
 .main-sidebar {
-    position: relative;
-    height: 100vh;
+    position: fixed;
+    width: 250px;
+    height: 100%;
     overflow-y: auto;
     background-color: $dark;
     color: $grey;
@@ -11,9 +12,21 @@
         font-weight: $bold;
     }
     .col {
+        .font-icon {
+            width: 40px;
+        }
         .active {
+            position: relative;
             background-color: rgba($light-grey, 0.08);
             color: $light-grey;
+            &:before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                height: 100%;
+                border-left: 3px solid $light-grey;
+            }
         }
     }
 }

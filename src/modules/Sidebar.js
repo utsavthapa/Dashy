@@ -1,23 +1,50 @@
-import { Row, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChartPie } from "@fortawesome/free-solid-svg-icons";
+import { faTicket } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+
 import Logo from "../assets/img/logo.svg";
 const Sidebar = () => {
   return (
     <div className="main-sidebar">
       <Col>
-        <Row className="title pb-5 pt-4 m-0">
+        <div className="title pb-5 pt-4 m-0">
           <div className="d-flex justify-content-center align-items-center">
             <div className="pe-2 py-2">
               <img src={Logo} alt=""></img>
             </div>
             Dashboard Kit
           </div>
-        </Row>
-        <Row className="m-0  px-4 py-2 active">Overview</Row>
-        <Row className="m-0  px-4 py-2 ">Tickets</Row>
-        <Row className="m-0  px-4 py-2 ">Ideas</Row>
-        <Row className="m-0  px-4 py-2">Contacts</Row>
-        <Row className="m-0  px-4 py-2 ">Agents</Row>
-        <Row className="m-0  px-4 py-2">Articles</Row>
+        </div>
+
+        <div className="side-option px-4 py-3 active">
+          <FontAwesomeIcon icon={faChartPie} className="font-icon" />
+          Overview
+        </div>
+        <div className="side-option px-4 py-3 ">
+          <FontAwesomeIcon icon={faTicket} className="font-icon" />
+          Tickets
+        </div>
+        <div className="side-option px-4 py-3 ">
+          <FontAwesomeIcon icon={faLightbulb} className="font-icon" />
+          Ideas
+        </div>
+        <div className="side-option px-4 py-3">
+          <FontAwesomeIcon icon={faUsers} className="font-icon" />
+          Contacts
+        </div>
+        <div className="side-option px-4 py-3 ">
+          <FontAwesomeIcon icon={faUser} className="font-icon" />
+          Agents
+        </div>
+        <div className="side-option px-4 py-3">
+          <FontAwesomeIcon icon={faBell} className="font-icon" />
+          Articles
+        </div>
       </Col>
     </div>
   );

@@ -11,14 +11,6 @@ const Dashboard = () => {
         <div className="dash-right">
           <Dashbody />
         </div>
-        {/* <Container fluid bg="primary" className="">
-          <Row>
-            <div className="Sidebar">
-              <Sidebar />
-            </div>
-            <Dashbody />
-          </Row>
-        </Container> */}
       </div>
     </>
   );
