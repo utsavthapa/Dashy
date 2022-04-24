@@ -84,6 +84,38 @@ const Dashbody = () => {
           </div>
         </div>
       </div>
+      <div className="graph-section">
+        <div className="graph-right px-3 pb-3">
+          <div className="graph-title pt-5">Today’s trends</div>
+          <div className="graph-sub-title py-3">
+            <div className="left">as of 25 May 2019, 09:41 PM</div>
+            <div className="right">- Today</div>
+          </div>
+          <Graph />
+        </div>
+        <div className="graph-left">
+          <div className="graph-card py-4">
+            <div className="graph-card-title">Resolved </div>
+            <div className="graph-card-number">449</div>
+          </div>
+          <div className="graph-card py-4">
+            <div className="graph-card-title">Received </div>
+            <div className="graph-card-number">426</div>
+          </div>
+          <div className="graph-card py-4">
+            <div className="graph-card-title">Average first response time</div>
+            <div className="graph-card-number">33m</div>
+          </div>
+          <div className="graph-card py-4">
+            <div className="graph-card-title">Average response time</div>
+            <div className="graph-card-number">3h 8m</div>
+          </div>
+          <div className="graph-card py-4">
+            <div className="graph-card-title">Resolution within SLA</div>
+            <div className="graph-card-number">94%</div>
+          </div>
+        </div>
+      </div>
     </Container>
   );
 };
